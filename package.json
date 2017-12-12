@@ -1,0 +1,32 @@
+{
+  "name": "ip-deploy-tool",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "ip6": "^0.1.5",
+    "request-promise-native-res": "^0.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MegaGM/ip-deploy-tool.git"
+  },
+  "keywords": [
+    "ip",
+    "ipv4",
+    "ipv6",
+    "network-interfaces",
+    "linux"
+  ],
+  "author": "Mega <Aza.Noriega@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MegaGM/ip-deploy-tool/issues"
+  },
+  "homepage": "https://github.com/MegaGM/ip-deploy-tool#readme"
+}
