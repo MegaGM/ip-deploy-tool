@@ -36,7 +36,7 @@ async function getMyIpv4() {
     url: 'http://ipv4.icanhazip.com',
     family: 4,
   })
-  const ip = res.body.replace('/n', '')
+  const ip = res.body.replace(/\/n/gi, '')
   console.info('getMyIpv4: ', ip)
   return ip
 }
@@ -46,7 +46,7 @@ async function getMyIpv6() {
     url: 'http://ipv6.icanhazip.com',
     family: 6,
   })
-  const ip = res.body.replace('/n', '')
+  const ip = res.body.replace(/\/n/gi, '')
   console.info('getMyIpv6: ', ip)
   return ip
 }
