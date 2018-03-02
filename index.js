@@ -27,7 +27,7 @@ async function getMyIface() {
   let iface =
     Object.keys(ni).includes('eth0') && 'eth0' ||
     Object.keys(ni).includes('venet0') && 'venet0'
-  // console.info('getMyIface: ', iface)
+  console.info('getMyIface: ', iface)
   return Promise.resolve(iface)
 }
 
@@ -36,7 +36,7 @@ async function getMyIpv4() {
     url: 'http://ipv4.icanhazip.com',
     family: 4,
   })
-  const ip = res.body.replace(/\/n/gi, '')
+  const ip = res.body.replace(/\n/gi, '')
   console.info('getMyIpv4: ', ip)
   return ip
 }
@@ -46,8 +46,8 @@ async function getMyIpv6() {
     url: 'http://ipv6.icanhazip.com',
     family: 6,
   })
-  const ip = res.body.replace(/\/n/gi, '')
-  console.info('getMyIpv6: ', ip)
+  const ip = res.body.replace(/\n/gi, '')
+  // console.info('getMyIpv6: ', ip)
   return ip
 }
 
